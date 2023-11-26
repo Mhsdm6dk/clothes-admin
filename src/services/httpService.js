@@ -2,7 +2,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const instance = axios.create({
-  baseURL: `https://clothes-eswc.onrender.com`,
+  baseURL: `https://api-gateway-lnia.onrender.com`,
   timeout: 500000,
   headers: {
     Accept: 'application/json',
