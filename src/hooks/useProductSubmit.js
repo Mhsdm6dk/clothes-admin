@@ -31,7 +31,16 @@ const useProductSubmit = (id) => {
       price: getValues('price'),
       sale: getValues('sale'),
       category: getValues('category'),
-      size: size
+      size: size,
+      length: getValues('length'),
+      perimeter: getValues('perimeter'),
+      color: getValues('color'),
+      material: getValues('material'),
+      style: getValues('style'),
+      texture: getValues('texture'),
+      accessory: getValues('accessory'),
+      thickness: getValues('thickness'),
+      nature: getValues('nature'),
     };
 
     if (id) {

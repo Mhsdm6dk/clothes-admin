@@ -59,6 +59,9 @@ const ProductTable = ({ products }) => {
               <span className="text-sm font-semibold">{formatVND(product?.sale)}</span>
             </TableCell>
             <TableCell>
+              <span className="text-sm font-semibold">{product?.age}</span>
+            </TableCell>
+            <TableCell>
               <EditDeleteButton
                 id={product._id}
                 handleUpdate={handleUpdate}

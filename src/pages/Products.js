@@ -187,6 +187,7 @@ const Products = () => {
                 <TableCell >Danh mục</TableCell>
                 <TableCell>Giá</TableCell>
                 <TableCell>Sale</TableCell>
+                <TableCell>Độ tuổi</TableCell>
                 <TableCell className="text-right">Hành động</TableCell>
               </tr>
             </TableHeader>

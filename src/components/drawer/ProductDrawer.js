@@ -161,6 +161,284 @@ const ProductDrawer = ({ id }) => {
               </div>
             </div>
 
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Chiều dài" />
+              <div className="col-span-8 sm:col-span-4">
+                <InputValue
+                  register={register}
+                  maxValue={1000}
+                  minValue={0}
+                  label="length"
+                  name="length"
+                  type="number"
+                  placeholder="Chiều dài"
+                />
+                <Error errorName={errors.quantity} />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Chu vi" />
+              <div className="col-span-8 sm:col-span-4">
+                <InputValue
+                  register={register}
+                  maxValue={1000}
+                  minValue={0}
+                  label="perimeter"
+                  name="perimeter"
+                  type="number"
+                  placeholder="Chu vi"
+                />
+                <Error errorName={errors.quantity} />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Màu sắc" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="color"
+                  name="color"
+                  options={[{
+                    value: "Xanh",
+                    label: "Xanh"
+                  },
+                  {
+                    value: "Đỏ",
+                    label: "Đỏ"
+                  },
+                  {
+                    value: "Vàng",
+                    label: "Vàng"
+                  },
+                  {
+                    value: "Hồng",
+                    label: "Hồng"
+                  },
+                  {
+                    value: "Đen",
+                    label: "Đen"
+                  },
+                  {
+                    value: "Trắng",
+                    label: "Trắng"
+                  },
+                  {
+                    value: "Xám",
+                    label: "Xám"
+                  },
+                  {
+                    value: "Tím",
+                    label: "Tím"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Chất liệu" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="material"
+                  name="material"
+                  options={[{
+                    value: "Cotton",
+                    label: "Cotton"
+                  },
+                  {
+                    value: "Nỉ",
+                    label: "Nỉ"
+                  },
+                  {
+                    value: "Len",
+                    label: "Len"
+                  },
+                  {
+                    value: "Denim",
+                    label: "Denim"
+                  },
+                  {
+                    value: "Polyester",
+                    label: "Polyester"
+                  },
+                  {
+                    value: "Cotton",
+                    label: "Cotton"
+                  },
+                  {
+                    value: "Lụa",
+                    label: "Lụa"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Kiểu dáng" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="style"
+                  name="style"
+                  options={[{
+                    value: "Áo thun",
+                    label: "Áo thun"
+                  },
+                  {
+                    value: "Bộ liền",
+                    label: "Bộ liền"
+                  },
+                  {
+                    value: "Áo hoodie",
+                    label: "Áo hoodie"
+                  },
+                  {
+                    value: "Áo khoác",
+                    label: "Áo khoác"
+                  },
+                  {
+                    value: "Áo len",
+                    label: "Áo len"
+                  },
+                  {
+                    value: "Chân váy",
+                    label: "Chân váy"
+                  },
+                  {
+                    value: "Váy",
+                    label: "Váy"
+                  },
+                  {
+                    value: "Quần",
+                    label: "Quần"
+                  },
+                  {
+                    value: "Áo sơ mi",
+                    label: "Áo sơ mi"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Hoạ tiết" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="texture"
+                  name="texture"
+                  options={[{
+                    value: "Trơn",
+                    label: "Trơn"
+                  },
+                  {
+                    value: "Hoa văn",
+                    label: "Hoa văn"
+                  },
+                  {
+                    value: "Sọc",
+                    label: "Sọc"
+                  },
+                  {
+                    value: "Trơn",
+                    label: "Trơn"
+                  },
+                  {
+                    value: "Kẻ caro",
+                    label: "Kẻ caro"
+                  },
+                  {
+                    value: "Đơn sắc",
+                    label: "Đơn sắc"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Phụ kiện" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="accessory"
+                  name="accessory"
+                  options={[{
+                    value: "Không",
+                    label: "Không"
+                  },
+                  {
+                    value: "Mũ trùm",
+                    label: "Mũ trùm"
+                  },
+                  {
+                    value: "Khóa kéo",
+                    label: "Khóa kéo"
+                  },
+                  {
+                    value: "Cúc",
+                    label: "Cúc"
+                  },
+                  {
+                    value: "Thắt lưng",
+                    label: "Thắt lưng"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Độ dày" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="thickness"
+                  name="thickness"
+                  options={[{
+                    value: "Mỏng",
+                    label: "Mỏng"
+                  },
+                  {
+                    value: "Vừa",
+                    label: "Vừa"
+                  },
+                  {
+                    value: "Dày",
+                    label: "Dày"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label="Tính năng đặc biệt" />
+              <div className="col-span-8 sm:col-span-4">
+                <SelectOption
+                  register={register}
+                  label="nature"
+                  name="nature"
+                  options={[{
+                    value: "Giữ ấm",
+                    label: "Giữ ấm"
+                  },
+                  {
+                    value: "Chống nắng",
+                    label: "Chống nắng"
+                  },
+                  {
+                    value: "Thoáng khí",
+                    label: "Thoáng khí"
+                  },
+                  {
+                    value: "Chống nước",
+                    label: "Chống nước"
+                  }]}
+                />
+                <Error errorName={errors.productType} />
+              </div>
+            </div>
+            
           </div>
 
           <DrawerButton id={id} title="Product" />
